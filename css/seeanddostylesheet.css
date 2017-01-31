@@ -1,0 +1,202 @@
+* {
+        margin:0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+		/*I googled the problem I was having with white space at the top of my page and this was in a forum as an answer (it worked) http://stackoverflow.com/questions/18772154/white-space-at-top-of-page#comment27675950_18772399 */
+
+
+.container {
+  width:100%;
+}
+
+.row:before,
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.column {
+  float:left;
+  min-height: 1px;
+  width:10%;
+}
+.column-1{
+  width:10%;
+}
+
+.column-2 {
+  width:20%;
+}
+
+.column-3 {
+  width:30%;
+}
+
+.column-4 {
+  width:40%;
+}
+
+.column-5 {
+  width:50%;
+}
+
+.column-6 {
+  width: 60%;
+}
+
+.column-7{
+  width:70%;
+}
+
+.column-8 {
+  width:80%;
+}
+
+.column-9{
+  width:90%;
+}
+
+.column-10{
+  width:100%;
+}
+html {
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	height:100%;
+
+}
+body {
+	margin:0%;
+	margin-top: 0%;
+	padding-top: 0%;
+}
+
+section {
+	width:100%;
+	background-color:#FFF; /*This is the title bar colour */
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+}
+
+.navbar {
+	display: block;
+	float:right;
+	width:100%;
+	margin-top: 0%;
+  color: #609878; /*I have no idea what this color is */
+}
+
+h1 {
+	font-size:3em;
+	font-family:'Quicksand', sans-serif;
+	text-align: left;
+  font-weight:100;
+}
+
+.cdf {
+  color:#40826D;
+}
+
+.caer {
+  color:#008080;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:	#779ECB; /*This is the navbar color*/
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+li a:hover {
+    background-color: #A1CAF1;
+}
+
+
+
+
+footer {
+    background-color: #779ECB;
+}
+
+.footerp {
+    color: gray;
+    font-size: .8em;
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+}
+
+.pabout {
+    color: orange;
+    font-style: normal;
+      text-decoration: none;
+}
+
+
+
+@media (max-width:575px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+}
+
+
+@media (max-width:502px){
+  li {
+    font-size: 0.9em;
+  }
+}
+
+
+@media (max-width:475px){
+  li {
+    font-size: 0.7em;
+  }
+  h1 {
+    font-size:1.7em;
+  }
+}
+
+@media (max-width:380px){
+  li {
+    font-size: 0.4em;
+  }
+  h1 {
+    font-size:1.4em;
+  }
+}
+
+@media (max-width:320px){
+  li {
+    font-size: 0.4em;
+  }
+  h1 {
+    font-size:1.3em;
+  }
+}

@@ -1,0 +1,347 @@
+* {
+        margin:0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+		/*I googled the problem I was having with white space at the top of my page
+    and this was in a forum as an answer (it worked)
+    http://stackoverflow.com/questions/18772154/white-space-at-top-of-page#comment27675950_18772399 */
+
+
+.container {
+  width:100%;
+}
+
+.row:before,
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.column {
+  float:left;
+  min-height: 1px;
+  width:10%;
+}
+.column-1{
+  width:10%;
+}
+
+.column-2 {
+  width:20%;
+}
+
+.column-3 {
+  width:30%;
+}
+
+.column-4 {
+  width:40%;
+}
+
+.column-5 {
+  width:50%;
+}
+
+.column-6 {
+  width: 60%;
+}
+
+.column-7{
+  width:70%;
+}
+
+.column-8 {
+  width:80%;
+}
+
+.column-9{
+  width:90%;
+}
+
+.column-10{
+  width:100%;
+}
+html {
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	height:100%;
+
+}
+body {
+	margin:0%;
+	margin-top: 0%;
+	padding-top: 0%;
+}
+
+section {
+	width:100%;
+	background-color:#FFF; /*This is the title bar colour */
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+}
+
+.navbar {
+	display: inline-block;
+	float:right;
+	width:100%;
+	margin-top: 0%;
+  color: #609878;
+}
+
+
+h1 {
+	font-size:3em;
+	font-family:'Quicksand', sans-serif;
+	text-align: left;
+  font-weight:100;
+}
+
+.cdf {
+  color:#40826D;
+}
+
+.caer {
+  color:#008080;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:	#779ECB; /*This is the navbar color*/
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+li a:hover {
+    background-color: #A1CAF1;
+}
+
+p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.7em;
+    text-align: center;
+    font-family:'Quicksand', sans-serif;
+}
+
+.page1img {
+    align-items: center;
+}
+
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #FFF;
+  font-size: 3em;
+}
+
+.section-what-to-do{
+  background-color: #464646;
+  padding-bottom:2%;
+}
+.section-eat-and-drink {
+  background-color: #FFF;
+
+}
+.row eat-and-drink-bit{
+  display: table-cell;
+}
+
+h3 {
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size:1.5em;
+}
+.foodh3 {
+  color:#464646;
+}
+.stuffh3{
+  color:#FFF;
+}
+.museum {
+  text-align: left;
+  color: #FFF;
+  font-size: 1.2em;
+}
+.seeanddolink {
+  color:#FFF;
+  font-style: normal;
+  text-decoration: none;
+}
+.seeanddolink:hover{
+    text-decoration: underline;
+}
+.nydeli-bit {
+  width:40%;
+  display: table-cell;
+  padding-right: 1%;
+}
+.nydeli {
+  text-align: left;
+  color: #464646;
+  font-size: 1.2em;
+}
+.peppermint-bit{
+  width: 40%;
+  display: table-cell;
+  padding-left: 1%;
+}
+.peppermint {
+  text-align: left;
+  color: #464646;
+  font-size: 1.2em;
+}
+.eat-and-drink-link {
+  color:orange;
+  font-style: normal;
+  text-decoration: none;
+}
+.eat-and-drink-link:hover{
+    text-decoration: underline;
+}
+
+.button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+img {
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+footer {
+    background-color: #779ECB;
+}
+
+.footerp {
+    color: gray;
+    font-size: .8em;
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+}
+
+.pabout {
+    color: orange;
+    font-style: normal;
+      text-decoration: none;
+}
+
+
+@media (max-width:1022px) {
+    h1 {
+        font-size: auto;
+    }
+    .museumimg {
+      display: none;
+    }
+    .museumimg column column-3{
+      display: none;
+    }
+    .museum column column-5{
+      display: inline-block;
+    }
+}
+
+
+
+
+@media (max-width:766px){
+  h2 {
+    font-size:2.5em;
+  }
+  .museum {
+    font-size: 1em;
+  }
+
+  .nydeli-bit{
+    display: block;
+    padding-left:5%;
+    width:80%;
+  }
+  .peppermint-bit{
+    display: block;
+    padding-left:5%;
+    width:80%;
+  }
+}
+
+
+@media (max-width:575px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+}
+
+
+@media (max-width:502px){
+  li {
+    font-size: 0.9em;
+  }
+}
+
+
+@media (max-width:475px){
+  li {
+    font-size: 0.7em;
+  }
+  h1 {
+    font-size:1.7em;
+  }
+}
+
+@media (max-width:380px){
+  li {
+    font-size: 0.4em;
+  }
+  h1 {
+    font-size:1.4em;
+  }
+}
+
+@media (max-width:320px){
+  li {
+    font-size: 0.4em;
+  }
+  h1 {
+    font-size:1.3em;
+  }
+}
